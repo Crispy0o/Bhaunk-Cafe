@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pre-order from Bhaunk Café, the dog café in Phagwara, Punjab, and skip the queue.">
+  <meta name="theme-color" content="#0c1722">
+  <title>Order ahead | Bhaunk Café</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&family=Noto+Sans+Gurmukhi:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html#dogs">The pack</a></li>
+        <li><a href="index.html#menu">Menu</a></li>
+        <li><a href="index.html#videos">Dog TV</a></li>
+        <li class="brand-item"><a class="brand" href="index.html" aria-label="Bhaunk Café home"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><ellipse cx="12" cy="16" rx="5" ry="4.2"/><circle cx="5.5" cy="11" r="2"/><circle cx="9.5" cy="6.5" r="2"/><circle cx="14.5" cy="6.5" r="2"/><circle cx="18.5" cy="11" r="2"/></svg>Bhaunk <em>Café</em></a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a class="nav-button nav-order" href="order.html" aria-current="page" aria-label="Order ahead"><svg class="cart-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 4h2.4l2.2 10.2h9.6l2-7.4H7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="19" r="1.6"/><circle cx="16.5" cy="19" r="1.6"/></svg>Order <data class="cart-count" data-cart-count hidden>0</data></a></li>
+        <li><a class="nav-button nav-visit" href="index.html#visit">Visit us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="order-hero section-wrap" aria-labelledby="order-title">
+      <p class="eyebrow">Pre-order</p>
+      <h1 id="order-title">Order now, <mark>walk straight in.</mark></h1>
+      <p class="hero-description">Pick your treats, tell us when you&rsquo;ll arrive, and place your pre-order. We&rsquo;ll have it ready. Pay when you pick up.</p>
+    </section>
+
+    <section class="order-layout section-wrap">
+      <section aria-labelledby="pick-title">
+        <h2 id="pick-title" class="order-heading">1. Pick your treats</h2>
+        <ul class="order-list">
+          <li class="order-item" data-id="latte" data-name="Good Boy Latte" data-price="180">
+            <figure class="menu-illustration" data-emoji="☕"><img src="assets/images/menu/latte.jpg" alt="Good Boy Latte" width="600" height="450" loading="lazy"></figure>
+            <article class="order-info">
+              <h3>Good Boy Latte</h3>
+              <p>Double espresso, steamed milk and a foam heart on top. Better behaved than most of us.</p>
+              <data class="price" value="180">₹180</data>
+            </article>
+            <fieldset class="stepper">
+              <legend class="sr-only">Quantity for Good Boy Latte</legend>
+              <button type="button" data-dec aria-label="Remove one Good Boy Latte">−</button>
+              <output>0</output>
+              <button type="button" data-inc aria-label="Add one Good Boy Latte">+</button>
+            </fieldset>
+          </li>
+          <li class="order-item" data-id="strawberry-cake" data-name="Pupcake" data-price="220">
+            <figure class="menu-illustration" data-emoji="🍰"><img src="assets/images/menu/strawberry-cake.jpg" alt="Pupcake" width="600" height="450" loading="lazy"></figure>
+            <article class="order-info">
+              <h3>Pupcake</h3>
+              <p>Vanilla sponge layered with strawberry cream. Share it, or don’t.</p>
+              <data class="price" value="220">₹220</data>
+            </article>
+            <fieldset class="stepper">
+              <legend class="sr-only">Quantity for Pupcake</legend>
+              <button type="button" data-dec aria-label="Remove one Pupcake">−</button>
+              <output>0</output>
+              <button type="button" data-inc aria-label="Add one Pupcake">+</button>
+            </fieldset>
+          </li>
+          <li class="order-item" data-id="bone-cookies" data-name="Bone Butter Cookies" data-price="120">
+            <figure class="menu-illustration" data-emoji="🍪"><img src="assets/images/menu/bone-cookies.jpg" alt="Bone Butter Cookies" width="600" height="450" loading="lazy"></figure>
+            <article class="order-info">
+              <h3>Bone Butter Cookies</h3>
+              <p>Bone-shaped butter cookies. Strictly for humans, Bruno.</p>
+              <data class="price" value="120">₹120</data>
+            </article>
+            <fieldset class="stepper">
+              <legend class="sr-only">Quantity for Bone Butter Cookies</legend>
+              <button type="button" data-dec aria-label="Remove one Bone Butter Cookies">−</button>
+              <output>0</output>
+              <button type="button" data-inc aria-label="Add one Bone Butter Cookies">+</button>
+            </fieldset>
+          </li>
+          <li class="order-item" data-id="chai" data-name="Zoomie Masala Chai" data-price="90">
+            <figure class="menu-illustration" data-emoji="☕"><img src="assets/images/menu/chai.jpg" alt="Zoomie Masala Chai" width="600" height="450" loading="lazy"></figure>
+            <article class="order-info">
+              <h3>Zoomie Masala Chai</h3>
+              <p>Kulhad chai with ginger and elaichi. Strong enough to start a zoomie.</p>
+              <data class="price" value="90">₹90</data>
+            </article>
+            <fieldset class="stepper">
+              <legend class="sr-only">Quantity for Zoomie Masala Chai</legend>
+              <button type="button" data-dec aria-label="Remove one Zoomie Masala Chai">−</button>
+              <output>0</output>
+              <button type="button" data-inc aria-label="Add one Zoomie Masala Chai">+</button>
+            </fieldset>
+          </li>
+          <li class="order-item" data-id="lassi" data-name="Pup Mango Lassi" data-price="130">
+            <figure class="menu-illustration" data-emoji="🥭"><img src="assets/images/menu/lassi.jpg" alt="Pup Mango Lassi" width="600" height="450" loading="lazy"></figure>
+            <article class="order-info">
+              <h3>Pup Mango Lassi</h3>
+              <p>Thick, ice-cold mango lassi that survives the afternoon heat.</p>
+              <data class="price" value="130">₹130</data>
+            </article>
+            <fieldset class="stepper">
+              <legend class="sr-only">Quantity for Pup Mango Lassi</legend>
+              <button type="button" data-dec aria-label="Remove one Pup Mango Lassi">−</button>
+              <output>0</output>
+              <button type="button" data-inc aria-label="Add one Pup Mango Lassi">+</button>
+            </fieldset>
+          </li>
+          <li class="order-item" data-id="waffles" data-name="Tail-Wag Waffles" data-price="210">
+            <figure class="menu-illustration" data-emoji="🧇"><img src="assets/images/menu/waffles.jpg" alt="Tail-Wag Waffles" width="600" height="450" loading="lazy"></figure>
+            <article class="order-info">
+              <h3>Tail-Wag Waffles</h3>
+              <p>Warm waffles, berries and maple. Very hard to share.</p>
+              <data class="price" value="210">₹210</data>
+            </article>
+            <fieldset class="stepper">
+              <legend class="sr-only">Quantity for Tail-Wag Waffles</legend>
+              <button type="button" data-dec aria-label="Remove one Tail-Wag Waffles">−</button>
+              <output>0</output>
+              <button type="button" data-inc aria-label="Add one Tail-Wag Waffles">+</button>
+            </fieldset>
+          </li>
+        </ul>
+      </section>
+
+      <section class="order-summary" aria-labelledby="summary-title">
+        <h2 id="summary-title" class="order-heading">2. Your order</h2>
+        <ul id="summary-list" class="summary-list"></ul>
+        <p id="summary-empty" class="summary-empty">Nothing here yet. Add something yummy 🍪</p>
+        <p class="total-row"><strong>Total</strong><data id="order-total" value="0">₹0</data></p>
+
+        <form id="order-form">
+          <label class="field">Your name
+            <input type="text" name="customer" required maxlength="40" placeholder="So we know whose chai it is">
+          </label>
+          <label class="field">Mobile number
+            <input type="tel" name="phone" required maxlength="15" placeholder="10 digits, so we can reach you">
+          </label>
+          <label class="field">Pickup time today
+            <input type="time" name="pickup" min="10:00" max="18:45" value="12:00" required>
+          </label>
+          <label class="field">Notes <small>(optional)</small>
+            <textarea name="notes" rows="2" maxlength="200" placeholder="Oat milk? Extra sprinkles? Tell us."></textarea>
+          </label>
+          <p id="order-message" class="order-message" role="status" hidden></p>
+          <menu class="order-actions">
+            <li><button class="button button-primary arrow" type="submit" id="place-btn">Place pre-order</button></li>
+            <li><button class="button button-secondary" type="button" id="whatsapp-btn">Send on WhatsApp instead</button></li>
+            <li><button class="text-link clear-btn" type="button" id="clear-order">Clear order</button></li>
+          </menu>
+          <pre id="order-preview" class="order-preview" hidden></pre>
+          <p class="order-fine">Payment is at pickup, in Phagwara, Punjab. Open 10 am to 7 pm, closed Mondays.</p>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="index.html"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><ellipse cx="12" cy="16" rx="5" ry="4.2"/><circle cx="5.5" cy="11" r="2"/><circle cx="9.5" cy="6.5" r="2"/><circle cx="14.5" cy="6.5" r="2"/><circle cx="18.5" cy="11" r="2"/></svg>Bhaunk <em>Café</em></a>
+    <p>Pre-orders are ready when you arrive. The dogs are not responsible for stolen cookies (Bruno is watching yours).</p>
+    <a class="staff-link" href="staff.html">🐾 Staff login</a>
+    <small>© 2026 Bhaunk Café · Not responsible for knocked-over drinks. It was the tail. It is always the tail.</small>
+  </footer>
+  <script src="config.js"></script>
+  <script src="dog.js" defer></script>
+  <script src="cart.js" defer></script>
+</body>
+</html>
